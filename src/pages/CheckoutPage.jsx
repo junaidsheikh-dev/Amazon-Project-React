@@ -1,5 +1,5 @@
 import './checkout-header.css'
-import './checkoutPage.css'
+import './CheckoutPage.css'
 import logoBlack from '../assets/images/amazon-logo-black.png';
 import checkoutLockIcon from '../assets/images/icons/checkout-lock-icon.png'
 import mobileLogo from '../assets/images/amazon-mobile-logo-black.png'
