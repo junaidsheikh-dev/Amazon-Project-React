@@ -8,8 +8,10 @@ import mobileLogo from "../../assets/images/amazon-mobile-logo-black.png";
 export function CheckoutPage() {
   return (
     <>
+      <link rel="icon" type="image/svg+xml" href="favicon/cart-favicon.png" />
 
-    <title>CheckOut</title>
+      <title>CheckOut</title>
+
       <div className="checkout-header">
         <div className="header-content">
           <div className="checkout-header-left-section">

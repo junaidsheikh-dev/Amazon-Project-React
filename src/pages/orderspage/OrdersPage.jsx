@@ -5,6 +5,8 @@ import buyagainIcon from "../../assets/images/icons/buy-again.png";
 export function OdersPage() {
   return (
     <>
+      <link rel="icon" type="image/svg+xml" href="favicon/orders-favicon.png" />
+
       <title>Orders</title>
 
       <Header />
