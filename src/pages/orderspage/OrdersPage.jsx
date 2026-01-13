@@ -1,6 +1,6 @@
-import { Header } from "../assets/components/Header";
+import { Header } from "../../assets/components/Header";
 import "./OrdersPage.css";
-import buyagainIcon from "../assets/images/icons/buy-again.png";
+import buyagainIcon from "../../assets/images/icons/buy-again.png";
 
 export function OdersPage() {
   return (
