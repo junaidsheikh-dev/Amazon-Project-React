@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router";
 import { HomePage } from "./pages/homepage/HomePage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { OdersPage } from "./pages/orderspage/OrdersPage";
-import { TrackingPackage } from "./pages/tracking package/Tracking";
+import { TrackingPackage } from "./pages/trackpackage/Tracking";
 import "./App.css";
 
 function App() {
