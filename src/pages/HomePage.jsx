@@ -10,6 +10,7 @@ import mobileLogo from '../assets/images/mobile-logo-white.png'
 export function HomePage(){
     return(
     <>
+    <title>Amazon</title>
         <div className="header">
         <div className="left-section">
             <a href="/" className="header-link">
