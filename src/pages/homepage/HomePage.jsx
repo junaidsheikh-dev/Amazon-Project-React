@@ -1,6 +1,7 @@
 import { Header } from "../../assets/components/Header";
 import "./HomePage.css";
 import { products } from "../../../data/products";
+import { addToCart } from "../../assets/components/cart";
 
 export function HomePage() {
   return (
@@ -27,12 +28,18 @@ export function HomePage() {
                 <div className="product-rating-container">
                   <img
                     className="product-rating-stars"
-                    src={`images/ratings/rating-${product.rating.stars*10}.png`}
+                    src={`images/ratings/rating-${
+                      product.rating.stars * 10
+                    }.png`}
                   />
-                  <div className="product-rating-count link-primary">{product.rating.count}</div>
+                  <div className="product-rating-count link-primary">
+                    {product.rating.count}
+                  </div>
                 </div>
 
-                <div className="product-price">${(product.priceCents/100).toFixed(2)}</div>
+                <div className="product-price">
+                  ${(product.priceCents / 100).toFixed(2)}
+                </div>
 
                 <div className="product-quantity-container">
                   <select>
@@ -56,7 +63,12 @@ export function HomePage() {
                   Added
                 </div>
 
-                <button className="add-to-cart-button button-primary">
+                <button
+                  className="add-to-cart-button button-primary"
+                  onClick={() => {
+                    addToCart(product.id);
+                  }}
+                >
                   Add to Cart
                 </button>
               </div>
