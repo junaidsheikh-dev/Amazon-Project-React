@@ -1,9 +1,24 @@
-import { Header } from "../../assets/components/Header";
 import "./HomePage.css";
-import { products } from "../../../data/products";
+import { Header } from "../../assets/components/Header";
 import { addToCart } from "../../assets/components/cart";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export function HomePage() {
+  const [products, setproducts] = useState([]);
+
+  useEffect(() => {
+    async function getProducts() {
+      try {
+        const response = await axios.get("http://localhost:3000/api/products");
+        setproducts(response.data);
+      } catch (error) {
+        console.error(error.response?.data || error.message);
+      }
+    }
+    getProducts();
+  }, []);
+
   return (
     <>
       <link rel="icon" type="image/svg+xml" href="favicon/home-favicon.png" />
