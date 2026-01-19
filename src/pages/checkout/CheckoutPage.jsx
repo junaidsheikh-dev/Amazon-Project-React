@@ -1,9 +1,6 @@
 import "./checkout-header.css";
 import "./CheckoutPage.css";
 import { Link } from "react-router";
-import logoBlack from "../../assets/images/amazon-logo-black.png";
-import checkoutLockIcon from "../../assets/images/icons/checkout-lock-icon.png";
-import mobileLogo from "../../assets/images/amazon-mobile-logo-black.png";
 import { cart } from "../../assets/components/cart";
 import { products } from "../../../data/products";
 
@@ -18,8 +15,8 @@ export function CheckoutPage() {
         <div className="header-content">
           <div className="checkout-header-left-section">
             <Link to="/">
-              <img className="logo" src={logoBlack} />
-              <img className="mobile-logo" src={mobileLogo} />
+              <img className="logo" src='images/logo.png' />
+              <img className="mobile-logo" src='images/mobile-logo.png' />
             </Link>
           </div>
 
@@ -32,7 +29,7 @@ export function CheckoutPage() {
           </div>
 
           <div className="checkout-header-right-section">
-            <img src={checkoutLockIcon} />
+            <img src='images/icons/checkout-lock-icon.png' />
           </div>
         </div>
       </div>

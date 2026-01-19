@@ -1,6 +1,5 @@
 import { Header } from "../../assets/components/Header";
 import "./OrdersPage.css";
-import buyagainIcon from "../../assets/images/icons/buy-again.png";
 
 export function OdersPage() {
   return (
@@ -48,7 +47,7 @@ export function OdersPage() {
                 </div>
                 <div className="product-quantity">Quantity: 1</div>
                 <button className="buy-again-button button-primary">
-                  <img className="buy-again-icon" src={buyagainIcon} />
+                  <img className="buy-again-icon" src='images/icons/buy-again.png' />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
               </div>
@@ -74,7 +73,7 @@ export function OdersPage() {
                 </div>
                 <div className="product-quantity">Quantity: 2</div>
                 <button className="buy-again-button button-primary">
-                  <img className="buy-again-icon" src={buyagainIcon} />
+                  <img className="buy-again-icon" src='images/icons/buy-again.png' />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
               </div>
