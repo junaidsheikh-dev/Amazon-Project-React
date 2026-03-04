@@ -4,7 +4,7 @@ import { addToCart } from "../../assets/components/cart";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export function HomePage() {
+export function HomePage({ cart }) {
   const [products, setproducts] = useState([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function HomePage() {
 
       <title>Amazon</title>
 
-      <Header />
+      <Header cart={cart} />
 
       <div className="home-page">
         <div className="products-grid">
