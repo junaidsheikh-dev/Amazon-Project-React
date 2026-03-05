@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     async function getCartItems (){
       try{
-        const response = await axios.get('api/cart-items')
+        const response = await axios.get('api/cart-items?expand=product')
         setCart(response.data)
       }catch(error){
         console.error(error.response?.data || error.message)
