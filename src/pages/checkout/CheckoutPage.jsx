@@ -22,7 +22,6 @@ export function CheckoutPage({ cart }) {
       setPaymentSummary(response.data);
     });
   }, []);
-  console.log(paymentSummary);
   return (
     <>
       <link rel="icon" type="image/svg+xml" href="favicon/cart-favicon.png" />
